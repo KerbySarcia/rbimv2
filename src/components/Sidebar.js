@@ -40,82 +40,74 @@ const Sidebar = () => {
       <div className="Sidebar__top">
         <img src={Logo} alt="logo" />
         <ToggleButtonGroup
-          color="primary"
+          color="secondary"
           orientation="vertical"
           exclusive
           value={alignment}
           onChange={handleAlignment}
         >
-          <LightTooltip
-            value="home"
-            aria-label="home"
-            TransitionComponent={Zoom}
-            title="Home"
-            placement="right"
-          >
-            <ToggleButton>
+          <ToggleButton value="home" aria-label="home">
+            <LightTooltip
+              TransitionComponent={Zoom}
+              title="Home"
+              placement="right"
+            >
               <HomeIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
 
-          <LightTooltip
-            title="Individual Record"
-            placement="right"
-            value="photos"
-            aria-label="photos"
-            TransitionComponent={Zoom}
-          >
-            <ToggleButton>
+          <ToggleButton value="photos" aria-label="photos">
+            <LightTooltip
+              title="Individual Record"
+              placement="right"
+              TransitionComponent={Zoom}
+            >
               <LibraryAddIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
 
-          <LightTooltip
-            title="Household Record"
-            placement="right"
-            value="house"
-            aria-label="house"
-            TransitionComponent={Zoom}
-          >
-            <ToggleButton>
+          <ToggleButton value="house" aria-label="house">
+            <LightTooltip
+              title="Household Record"
+              placement="right"
+              TransitionComponent={Zoom}
+            >
               <MapsHomeWorkIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
 
-          <LightTooltip
-            title="Reports"
-            placement="right"
-            value="table"
-            aria-label="table"
-            TransitionComponent={Zoom}
-          >
-            <ToggleButton>
+          <ToggleButton value="table" aria-label="table">
+            <LightTooltip
+              title="Reports"
+              placement="right"
+              TransitionComponent={Zoom}
+            >
               <BackupTableIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
         </ToggleButtonGroup>
       </div>
       <div className="Sidebar__bottom" placement="right">
         <ToggleButtonGroup orientation="vertical">
-          <LightTooltip
-            title="Account"
-            placement="right"
-            TransitionComponent={Zoom}
-          >
-            <ToggleButton>
+          <ToggleButton>
+            <LightTooltip
+              title="Account"
+              placement="right"
+              TransitionComponent={Zoom}
+            >
               <AccountCircleIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
 
-          <LightTooltip
-            title="Logout"
-            placement="right"
-            TransitionComponent={Zoom}
-          >
-            <ToggleButton>
+          <ToggleButton>
+            <LightTooltip
+              title="Logout"
+              placement="right"
+              TransitionComponent={Zoom}
+            >
               <LogoutIcon />
-            </ToggleButton>
-          </LightTooltip>
+            </LightTooltip>
+          </ToggleButton>
 
           <LightTooltip
             title="Settings"
